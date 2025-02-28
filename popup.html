@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Mixer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-container" class="d-flex flex-column border-3">
+      <div id="color-add-remove-container" class="d-flex justify-content-between">
+        <div id="color-bar-container">
+          <!-- <div class="color-bar d-flex justify-content-between">
+            <input
+              type="text"
+              class="input-color-hex border-3 rounded-border"
+              placeholder="# Color Hex"
+            />
+            <input
+              class="color-picker border-3 cursor-pointer rounded-border"
+              type="color"
+            />
+            <span></span>
+            
+          </div>
+
+          <div class="color-bar d-flex justify-content-between">
+            <input
+              type="text"
+              class="input-color-hex border-3 rounded-border"
+              placeholder="# Color Hex"
+            />
+            <input
+              class="color-picker border-3 cursor-pointer rounded-border"
+              type="color"
+            />
+          </div> -->
+        </div>
+        <div id="add-color-container">
+          <button class="border-3 cursor-pointer rounded-border" id="add-color">
+            ➕ 
+          </button>
+        </div>
+      </div>
+      <button class="border-3 cursor-pointer rounded-border" id="mix-colors">
+        Mix
+      </button>
+      <div class="border-3" id="result-color"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

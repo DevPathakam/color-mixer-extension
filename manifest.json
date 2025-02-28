@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Color Mixer",
+    "version": "1.0",
+    "description": "Pick multiple colors and mix them to generate a new color.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": []
+  }
+  
