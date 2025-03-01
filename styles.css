@@ -10,20 +10,16 @@ body {
   background-color: dimgray;
   border-radius: 25px;
 }
-#color-add-remove-container {
+#input-container {
   margin: 10px 0;
 }
 #color-bar-container {
   width: 80%;
 }
 #add-color-container {
-  position: relative;
   width: 20%;
 }
 #add-color {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   margin: 5px;
   padding: 10px;
 }
@@ -35,6 +31,18 @@ body {
 }
 
 /* common styles start */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
 .border-3 {
   border: 3px solid #000;
 }
@@ -59,25 +67,34 @@ body {
 .rounded-border {
   border-radius: 10px;
 }
-/* common styles end */
-
-.color-picker {
-  display: block;
-  margin: 5px auto;
-  border-radius: 100%;
+.gap-1 {
+  gap: 1rem;
 }
+/* common styles end */
 
 #mix-colors {
   width: 100%;
   margin: 10px auto;
   padding: 5px 10px;
-  background-color: #f0f0f0;
 }
-
+#copy-color {
+  background-color: darkmagenta;
+  font-weight: bold;
+  color: white;
+  height: 3rem;
+}
 #result-color {
-  width: 100px;
+  width: 40%;
   height: 100px;
-  margin: 10px auto;
-  border: 3px solid #000;
   border-radius: 100%;
+}
+#result-color-hex {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  cursor: text;
 }

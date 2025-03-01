@@ -8,13 +8,15 @@
   </head>
   <body>
     <div id="main-container" class="d-flex flex-column border-3">
-      <div
-        id="color-add-remove-container"
-        class="d-flex justify-content-between"
-      >
-        <div id="color-bar-container"></div>
-        <div id="add-color-container">
-          <button class="border-3 cursor-pointer rounded-border" id="add-color">
+      <div id="input-container" class="d-flex justify-content-between">
+        <div id="color-bar-container">
+          <!-- Color bars will be added from popup.js -->
+        </div>
+        <div id="add-color-container" class="position-relative">
+          <button
+            class="border-3 cursor-pointer rounded-border position-absolute bottom-0 right-0"
+            id="add-color"
+          >
             ➕
           </button>
         </div>
@@ -22,7 +24,16 @@
       <button class="border-3 cursor-pointer rounded-border" id="mix-colors">
         Mix
       </button>
-      <div class="border-3" id="result-color"></div>
+      <div class="d-flex gap-1 position-relative" id="output-container">
+        <p id="result-color" class="border-3"></p>
+        <p id="result-color-hex" class="border-3">#output</p>
+        <button
+          class="border-3 cursor-pointer rounded-border position-absolute bottom-0 right-0"
+          id="copy-color"
+        >
+          📄Copy
+        </button>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>
